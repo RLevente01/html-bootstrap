@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS tömbök</title>
+</head>
+<body>
+    <p id="elem"></p>
+    <br>
+    <p id="szamok"></p>
+    <p id = "sz"></p>
+
+
+    <script>
+        const t = ["alma","körte","eper", "ananász"];
+        var szo = "";
+        t.forEach(element => {
+            szo += element + "<br>";
+        });
+        document.getElementById("elem").innerHTML = szo;
+
+        var szam = "";
+        for(let i = 1; i < 11; i++)
+        {
+            szam += i + "<br>";          
+        }
+        document.getElementById("szamok").innerHTML = szam;
+
+        const tomb = [1,2,3,4,5];
+        var lepes = 0;
+        var n = "";
+        while(lepes < tomb.length){
+            n += sz[lepes] + "<br>";
+            lepes++;
+        }
+        document.getElementById("sz").innerHTML = n;
+    </script>
+</body>
+</html>
